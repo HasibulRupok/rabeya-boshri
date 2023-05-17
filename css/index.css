@@ -1,0 +1,289 @@
+body {
+    margin: 0;
+    padding: 0;
+
+    /* background-color: antiquewhite; */
+
+    background-image: linear-gradient(to bottom right, #efa2b4, #aef1ee);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: auto;
+    color: #18393c;
+}
+
+/* ---------------- Nav Bar ----------------- */
+
+#topNavSec {
+    display: block;
+    margin: 8px 0;
+
+    /* position: fixed;
+    top: 0;
+    z-index: 1;
+    background-color: #efa2b4; */
+}
+
+#nav {
+    display: flex;
+    /* float: right; */
+    width: fit-content;
+    margin-left: auto;
+}
+
+#nav>li {
+    padding: 6px 16px;
+    color: #18393c;
+
+}
+
+/* profile  */
+#profileNameDiv {
+    margin: 20% 0 0 20%;
+}
+
+#cvDownload {
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 25px;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    padding: 8px 20px;
+    color: #f03b6b;
+    /* margin-top: 1rem; */
+    margin-right: 8px;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+#cvDownload:hover {
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+#dp {
+    border-radius: 50%;
+    width: 65%;
+    margin: 8% 0 0 10%;
+}
+
+/* about section */
+#about-section {
+    margin-top: 4rem;
+    padding: 0 2rem 3rem 2rem;
+}
+
+#about-left {
+    padding-right: 1rem;
+}
+
+.interests {
+    font-weight: 600;
+}
+
+/* skills  */
+#skillContainer {
+    display: flex;
+    word-wrap: break-word;
+}
+
+.eachSkill {
+    padding: 6px 15px;
+    border: 1px solid rgba(85, 85, 85, 0.419);
+}
+
+#about-left {
+    width: 70%;
+}
+
+#about-right {
+    width: 30%;
+    margin-left: 5%;
+}
+
+#skill-list {
+    margin-left: 2rem;
+    margin-top: 1rem;
+    list-style: disc;
+}
+
+/* educaton - publication --- */
+#edu-publi {
+    padding: 3rem 2rem;
+}
+
+#edu-buttons>button {
+    margin-right: 1rem;
+    color: rgba(102, 97, 97, 0.733);
+    transition: 0.2s;
+    font-size: x-large;
+    font-weight: 700;
+}
+
+#edu-buttons>button:hover {
+    border-bottom: 1px solid rgba(102, 97, 97, 0.733);
+}
+
+.eachpublication {
+    width: fit-content;
+    margin-bottom: 1.5rem;
+}
+
+.viewPaperLink {
+    color: #f03b6b;
+}
+
+.activeExpButton {
+    color: #f03b6b !important;
+    border-bottom: 1px solid #f03b6b;
+}
+
+
+/* ----------------- BLOG -------------------  */
+#blogSection {
+    padding: 5rem 2rem;
+}
+
+.blog-title {
+    font-weight: 500;
+}
+
+.blogImage {
+    width: 60%;
+    display: block;
+    margin: 6px auto !important;
+    aspect-ratio: 16/9;
+    border-radius: 5px;
+
+    box-shadow: 1px 2px 38px -4px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 1px 2px 38px -4px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 1px 2px 38px -4px rgba(0, 0, 0, 0.75);
+}
+
+
+/* ---------------- Contact ----------------- */
+#contact-section {
+    padding: 4rem 2rem;
+}
+
+.contact-input {
+    margin: 5px 0;
+    width: 75% !important;
+    padding: 8px 8px;
+    background-color: transparent;
+    border: 1px solid #f36289;
+    border-radius: 10px;
+}
+
+#sendButton {
+    margin: 5px 0;
+    padding: 6px 22px;
+    background-color: #f03b6b;
+    border: 1px solid #88ffc8;
+    border-radius: 10px;
+    transition: 0.2s;
+    color: white;
+
+}
+
+#sendButton:hover {
+    background-color: #f36289;
+}
+
+.socialMedia>a {
+    font-size: xx-large;
+    color: #f03b6b;
+    margin-right: 0.5rem;
+    transition: 0.3s;
+}
+
+.socialMedia>a:hover {
+    color: #f03b6bc5;
+}
+
+.details-info>h3 {
+    font-size: x-large;
+    font-weight: 500;
+}
+
+.details-info>p {
+    margin-left: 6px;
+}
+
+.details-info {
+    margin-bottom: 1rem;
+}
+
+
+
+
+
+/* responsive */
+@media (max-width: 768px) {
+
+    /* navbar */
+    #topNavSec {
+        display: none;
+    }
+
+    /* profile */
+    #profileSection {
+        /* display: block; */
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    #profileNameDiv {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    #dpDiv {
+        width: 100%;
+    }
+
+    #dp {
+        border-radius: 50%;
+        width: 65%;
+        margin: 30px auto !important;
+    }
+
+    /* about */
+    #about-section {
+        margin-top: 1rem;
+        padding: 0 1rem;
+    }
+
+    #about-left-right {
+        display: block;
+    }
+
+    #about-left {
+        width: 100%;
+    }
+
+    #about-right {
+        width: 100%;
+    }
+
+
+    /* blog  */
+    .blogImage {
+        width: 90%;
+    }
+
+    /* contact me  */
+    #total-contact-info {
+        display: block;
+    }
+
+    .contact-input {
+        width: 95% !important;
+    }
+
+    #contact-form {
+        width: 95%;
+        margin: 1.5rem auto !important;
+    }
+
+    #contact-details {
+        width: 95%;
+        margin: 1.5rem auto !important;
+    }
+}
