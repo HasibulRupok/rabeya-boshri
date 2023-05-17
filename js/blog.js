@@ -33,7 +33,7 @@ let blogs = [
 let html = '';
 blogs.forEach(blog => {
     if ('image' in blog) {
-        const img = '../files/' + blog['image'];
+        const img = 'files/' + blog['image'];
 
         html += `
         <div class="eachPost my-7 pt-4">
